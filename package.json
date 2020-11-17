@@ -2,6 +2,26 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
+    "@codeceptjs/configure": "^0.6.0",
+    "@codeceptjs/examples": "^1.2.1",
+    "@codeceptjs/ui": "^0.4.2",
+    "babel-plugin-relay": "^10.1.0",
+    "codeceptjs": "^3.0.1",
+    "faker": "^5.1.0",
+    "graphql": "^15.4.0",
+    "lerna": "^3.22.1",
+    "parcel": "^1.12.4",
+    "playwright": "^1.5.2",
+    "puppeteer": "^3.3.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "hello-chakra": "file:packages/hello-chakra-ui",
+    "hello-chakra-cli": "file:packages/hello-chakra-api",
+    "hello-codecept": "file:packages/hello-codecept"
   }
 }

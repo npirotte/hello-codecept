@@ -1,0 +1,44 @@
+{
+  "name": "hello-chakra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "relay": "relay-compiler"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
+    "formik": "^2.2.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-relay": "^10.0.1",
+    "react-relay-network-modern": "^5.0.1",
+    "recoil": "^0.1.2",
+    "regenerator-runtime": "^0.13.7",
+    "relay-hooks": "^3.7.0",
+    "relay-runtime": "^10.0.1",
+    "subscriptions-transport-ws": "^0.9.18"
+  },
+  "description": "",
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      [
+        "relay"
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-react-jsx": "^7.12.5"
+  }
+}

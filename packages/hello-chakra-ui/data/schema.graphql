@@ -1,0 +1,33 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateTodoInput {
+  title: String!
+}
+
+type Mutation {
+  createTodo(input: CreateTodoInput!): Todo!
+  resolveTodo(input: ResolveTodoInput!): Todo!
+}
+
+type Query {
+  todo(id: ID!): Todo!
+  todos: [Todo!]!
+}
+
+input ResolveTodoInput {
+  id: ID!
+}
+
+type Subscription {
+  todoAdded: [Todo!]!
+}
+
+"""A todo element"""
+type Todo {
+  createOn: Int!
+  doneOn: Int
+  id: ID!
+  title: String
+}
